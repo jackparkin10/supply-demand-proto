@@ -1,0 +1,59 @@
+.objectives {
+  min-width: 0;
+  padding: var(--space-5) 0 var(--space-3);
+}
+
+.objectives__lead {
+  margin: 0 0 var(--space-5);
+  font-family: var(--font-sans);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  font-weight: 700;
+  line-height: var(--leading-snug);
+  letter-spacing: 0.01em;
+  color: var(--color-crimson);
+}
+
+.objectives__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.05rem;
+}
+
+.objectives__list li {
+  position: relative;
+  padding-left: 1.35rem;
+}
+
+.objectives__list li::before {
+  content: '';
+  position: absolute;
+  left: 0.1rem;
+  top: 0.48em;
+  width: 0.44rem;
+  height: 0.44rem;
+  background: var(--color-crimson);
+  transform: rotate(45deg);
+}
+
+.objectives__link {
+  font-family: var(--font-sans);
+  font-size: clamp(0.98rem, 1.35vw, 1.08rem);
+  line-height: 1.5;
+  color: var(--color-ink);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  transition: color 160ms var(--ease-out);
+}
+
+.objectives__link:hover,
+.objectives__link:focus-visible {
+  color: var(--color-blue-deep);
+  text-decoration: underline;
+}
+
+.objectives__link:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}

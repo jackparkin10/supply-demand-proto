@@ -1,0 +1,7 @@
+.spread {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.25rem, 4vw, 3.25rem);
+  align-items: start;
+  padding: clamp(1.5rem, 3.2vw, 2.25rem) var(--content-pad) var(--space-8);
+}

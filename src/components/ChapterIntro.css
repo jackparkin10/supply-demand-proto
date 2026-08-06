@@ -1,0 +1,46 @@
+.intro {
+  min-width: 0;
+  padding-top: var(--space-2);
+}
+
+.intro__body {
+  font-family: var(--font-serif);
+  font-size: clamp(1.08rem, 1.55vw, 1.2rem);
+  line-height: 1.7;
+  color: var(--color-ink);
+  text-align: left;
+  text-wrap: pretty;
+}
+
+.intro__body p {
+  margin: 0;
+}
+
+.intro__body p + p {
+  margin-top: 1.15em;
+}
+
+.intro__body p:first-child::first-letter {
+  font-weight: 600;
+}
+
+.intro__body em {
+  font-style: italic;
+  color: inherit;
+}
+
+.intro__note {
+  margin-top: 1.5em;
+  padding: 0.85em 0 0.85em 1em;
+  border-left: 2px solid var(--color-blue);
+  font-size: 0.94em;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-ink-muted);
+}
+
+.intro__note em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-ink);
+}

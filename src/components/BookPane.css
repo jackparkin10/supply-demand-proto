@@ -1,0 +1,32 @@
+.book {
+  min-width: 0;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  padding: var(--space-4) var(--gutter) var(--space-8);
+  background: var(--color-paper);
+}
+
+.book__frame {
+  width: 100%;
+  max-width: 56rem;
+}
+
+.book__page {
+  background: var(--color-paper-elevated);
+  box-shadow: var(--shadow-soft);
+  min-height: calc(100dvh - 2rem);
+  outline: none;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .book {
+    padding: 0 0 var(--space-7);
+  }
+
+  .book__page {
+    min-height: auto;
+    box-shadow: none;
+  }
+}
